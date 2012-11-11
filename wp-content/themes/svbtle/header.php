@@ -21,8 +21,6 @@
 
 			$options = get_option ( 'svbtle_options' ); 
 
-			echo $options['google_analytics'];
- 
 			if( isset( $options['color'] ) && '' != $options['color'] )
 				$color = $options['color'];
 			else 

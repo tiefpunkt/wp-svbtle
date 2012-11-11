@@ -89,6 +89,9 @@
 </script>
 		</div><!-- #wrap -->
 		
-		<?php wp_footer(); ?>
+		<?php 
+			echo $options['google_analytics'];
+			wp_footer(); 
+		?>
 	</body>
 </html>
