@@ -1116,13 +1116,13 @@ aside.kudo a.counter span.txt {
 #svbtle_linkback {
 	position:fixed;
 	left:25px;
-	bottom:30px;
-	font-size:15px;
+	bottom:10px;
+	font-size:12px;
 	letter-spacing:0;
 	text-transform:uppercase;
 	font-family:"freight-sans-pro",sans-serif;
 	font-weight:900;
-	line-height:15px;
+	line-height:12px;
 	background-color:rgba(255,255,255,0.7);
 	padding:10px;
 	height:30px;
@@ -1285,7 +1285,7 @@ td {
 	}
 
 	#svbtle_linkback {
-		top:700px;
+		top:720px;
 		position:absolute;
 	}
 
@@ -1888,8 +1888,8 @@ span.logo_square {
 	background-color:#000;
 	display:inline-block;
 	border-radius:5px;
-	width:28px;
-	height:26px;
+	width:20px;
+	height:18px;
 	border:1px solid #000;
 }
 
@@ -1898,10 +1898,10 @@ span.logo_circle {
 	border:2px solid #fff;
 	border-radius:50%;
 	display:block;
-	width:14px;
-	height:14px;
+	width:10px;
+	height:10px;
 	margin:0 auto;
-	margin-top:4px;
+	margin-top:1.5px;
 	text-indent:-9999px;
 }
 
