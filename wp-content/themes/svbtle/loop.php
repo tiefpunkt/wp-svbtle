@@ -13,8 +13,8 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php $options = get_option ( 'svbtle_options' ); ?>
 
-	<?php $kudos = get_post_meta($post->ID, '_wp-svbtle-kudos', true); 
-				if ($kudos > "") { $kudos = $kudos; } else { $kudos = "0"; } ?>
+	<?php /*$kudos = get_post_meta($post->ID, '_wp-svbtle-kudos', true); 
+				if ($kudos > "") { $kudos = $kudos; } else { $kudos = "0"; } */ ?>
 				
 		<article id="<?php the_ID(); ?>" class="post">
 
@@ -37,15 +37,15 @@
 			
 			
 			<aside class="kudo kudoable" id="<?php the_ID(); ?>">
-				<a href="?" class="kudobject">
+				<!-- <a href="?" class="kudobject">
 					<div class="opening clearfix">
 						<span class="circle">&nbsp;</span>
 					</div>
-				</a>
+				</a> -->
 		
-				<a href="?" class="counter">
-					<span class="num"><?php echo $kudos; ?></span>
-					<span class="txt">Kudos</span>
+				<a href="<?php the_permalink(); ?>" class="counter">
+					<span class="num"><?php echo comments_number(0,1,"%"); ?></span>
+					<span class="txt"><?php echo comments_number("Comments", "Comment", "Comments"); ?></span>
 				</a>
 			</aside>
 		</article><!-- #post-## -->

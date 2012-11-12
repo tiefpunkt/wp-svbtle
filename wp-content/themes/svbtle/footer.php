@@ -23,6 +23,8 @@
 		})
 	} 
 
+	/* KUDOS - Foo. Disabled!
+	
 	function mouseIn(t) {
 		t.addClass("active"),
 		t.children(".counter").children("span.txt").html("Don&rsquo;t move"),
@@ -78,7 +80,7 @@
 			mouseOut(kudo),
 			t.preventDefault()
 		});
-
+	*/
 
 	$("input.pane_input, textarea.pane_input").bind("focus", function() {
 			$("li.text_field").removeClass("active"), $(this).parent("li.text_field").addClass("active")
