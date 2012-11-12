@@ -94,6 +94,7 @@
 		      </h2>
 		    </li>
 		
+				<?php if ( is_active_sidebar( 'sidebar' ) ) dynamic_sidebar( 'sidebar' ); ?>
 		
 				<?php
 					$mypages = get_pages( );
@@ -137,8 +138,6 @@
 				      <a href="<?php bloginfo('rss_url'); ?>">feed</a>
 				    </li>		
 				<?php endif ?>		
-		
-				<?php if ( is_active_sidebar( 'sidebar' ) ) dynamic_sidebar( 'sidebar' ); ?>
 
 		  </ul>
 		  <aside id="svbtle_linkback">
