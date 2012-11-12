@@ -145,6 +145,12 @@
 		    <a href="https://github.com/gravityonmars/wp-svbtle">
 		      <span class="logo_square"><span class="logo_circle">&nbsp;</span></span>&nbsp;<span class="svbtle">wp-svbtle</span>
 		    </a>
+		    <?php
+					$impressum = get_page_by_title('Impressum');
+					if ($impressum) {
+						echo "| <a href=\"". get_permalink($impressum)."\">Impressum</a>";
+					} 
+		    ?>
 		  </aside>
 		</header>
 		
