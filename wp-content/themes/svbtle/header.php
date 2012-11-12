@@ -101,6 +101,8 @@
 
 					foreach( $mypages as $page ) {		
 						$content = $page->post_content;
+						if ( $page->post_title == "Impressum" ) // Ignore Impressum
+							continue;
 						if ( ! $content ) // Check for empty page
 							continue;
 
